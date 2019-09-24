@@ -1,2 +1,3 @@
+import main from './src/main';
 
-console.log("上手");
+main();
