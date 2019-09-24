@@ -17,10 +17,22 @@ function load(data) {
 /**
  * エントリポイント
  */
-export default function main() {
+export default function main({ argv }) {
     const dictionary = load(dictionaryData);
 
-    dictionary.forEach((word) => {
-        console.log(`${word.id} : ${word.word}`);
-    });
+    const id = argv[2];
+    if (id == null) {
+        dictionary.forEach((word) => {
+            console.log(`${word.id} : ${word.word}`);
+        });
+        return;
+    }
+
+    const word = dictionary[id];
+    if (word == null) {
+        console.log('単語が見つかりません。');
+        return;
+    }
+
+    console.log(`${word.id} : ${word.word}`);
 }
