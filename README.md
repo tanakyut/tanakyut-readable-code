@@ -4,13 +4,15 @@ JavaScript
 
 ## USAGE
 
-- nodeから実行する場合
+### yarnから実行する場合
+
+- ライブラリのインストール
 
 ```
-$ node ./index.js
+$ yarn install
 ```
 
-- yarnから実行する場合
+- 実行
 
 ```
 $ yarn main
