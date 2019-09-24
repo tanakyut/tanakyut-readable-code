@@ -1,0 +1,8 @@
+{
+  "name": "tanakyut-readable-code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tanakyut/tanakyut-readable-code.git",
+  "author": "田中優太 <yuta.tanaka@justsystems.com>",
+  "license": "MIT"
+}
